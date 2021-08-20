@@ -27,7 +27,7 @@ links.forEach(function(link){
     link.addEventListener('click',function(ev){
         ev.preventDefault();
         let content = document.querySelector(".content");
-        
+
         //quitarle las clases de animación que ya tiene
         content.classList.remove("animate_fadeInDown");
         content.classList.remove("animate_animated");
@@ -38,8 +38,9 @@ links.forEach(function(link){
         content.classList.add("animate_animated");
 
         setTimeout(function(){
-            location.href = "/";
+            location.href = "/boletines";
         },600);
+
         
 
         return false;
