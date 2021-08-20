@@ -1,0 +1,181 @@
+/* 
+Rosa: #C6426E
+Morado: #642B73
+Negro: #f5f5f5
+rosa #d500f9
+*/
+
+html{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #d500f9;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container{
+    background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.content{
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16), 0 3px 6px rgba(0, 0, 0, 23);
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+    overflow: scroll;
+
+}
+.content{
+    padding: 1em;
+}
+
+td{
+display: block;
+width: 100%;
+}
+td:nth-of-type(1){
+font-size: 1.5em;
+font-weight: bold;
+color: #642B73;
+}
+th{
+display: none;
+}
+
+.actions{
+    position: absolute;
+    top:1em;
+    right:1em;
+}
+
+.close{
+    height:40px;
+    width:40px;
+    color:white;
+    border-radius:50%;
+    background-color: #642B73;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16), 0 3px 6px rgba(0, 0, 0, 23);
+    font-weight:300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.fa-star, .far{
+    color:#ffc400;
+}
+
+p{
+    color: black;
+}
+.red{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+#boton-pago{
+    background-color: yellow;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+/* pseudoclase: cuando un elemento se encuentra en un estado, toma la propiedad del padre dea cuerdo a la posicion*/
+.table tr:nth-child(even){
+    background-color: #bdc3c7;
+}
+
+/* shorthand properties: es cuando se declaran más de una propiedad separadas por un espacio*/
+.title-item{
+    border-bottom: #C6426E solid 2px;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.address{
+    font-weight: bold;
+    color: #642B73;
+    font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+.position{
+    background-color: #C6426E;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+/*
+
+Especificidad:
+
+1. !important
+2. Atributo style
+
+Selectores
+
+1. selectores por id
+2. selectores de clase, atributos y pseudoclases
+3. selectores de tipo y pseudo elementos
+*/
+
+@media (min-width:900px){
+th{
+display: table-cell;
+}
+td{
+    width: auto;
+display: table-cell;
+}
+td:nth-of-type(1){
+    font-size: 1em;
+}
+.content{
+    padding: 1.8em;
+}
+}
+
+@media (min-height:550px){
+    .content{
+        height: 550px;
+    }
+}
